@@ -1,0 +1,57 @@
+############### Job 5171232 prolog ###############
+SLURM_NODELIST: hive-dc-7-10-18
+############### Job 5171232 prolog ###############
+
+############### Job 5171232 summary from hive-dc-7-10-18 ###############
+Name                : geovar_array
+User                : oshi
+Account             : publicgrp
+Partition           : high
+Nodes               : hive-dc-7-10-18
+Cores               : 4
+GPUs                : 0
+State               : FAILED
+ExitCode            : 1:0
+Submit              : 2025-10-22T20:02:25
+Start               : 2025-10-22T20:02:35
+End                 : 2025-10-22T20:02:35
+Reserved walltime   : 12:00:00
+Used walltime       : 00:00:00
+Used CPU time       : 00:00:00
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 60G
+Max Mem used        : 2.00M (hive-dc-7-10-18)
+Max Disk Write      : 0.00  (hive-dc-7-10-18)
+Max Disk Read       : 0.00  (hive-dc-7-10-18)
+
+############### Job 5171232 info ###############
+JobId=5171232 ArrayJobId=5171213 ArrayTaskId=19 ArrayTaskThrottle=11 JobName=geovar_array
+   UserId=oshi(1724824) GroupId=oshi(1724824) MCS_label=N/A
+   Priority=264 Nice=0 Account=publicgrp QOS=publicgrp-high-qos
+   JobState=COMPLETING Reason=NonZeroExitCode Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=1:0
+   RunTime=00:00:00 TimeLimit=12:00:00 TimeMin=N/A
+   SubmitTime=2025-10-22T20:02:25 EligibleTime=2025-10-22T20:02:25
+   AccrueTime=2025-10-22T20:02:25
+   StartTime=2025-10-22T20:02:35 EndTime=2025-10-22T20:02:35 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2025-10-22T20:02:35 Scheduler=Main
+   Partition=high AllocNode:Sid=hive-dc-7-7-30:1737569
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=hive-dc-7-10-18
+   BatchHost=hive-dc-7-10-18
+   NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=4,mem=60G,node=1,billing=4
+   AllocTRES=cpu=4,mem=60G,node=1,billing=4
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=4 MinMemoryNode=60G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/quobyte/bmhenngrp/from-lssc0/projects/CAAPA2_functional_annotation/geovar/scripts/run_geovar.slurm
+   WorkDir=/quobyte/bmhenngrp/from-lssc0
+   StdErr=/quobyte/bmhenngrp/from-lssc0/projects/CAAPA2_functional_annotation/geovar/scripts/logs/geovar_array-5171213_19.err
+   StdIn=/dev/null
+   StdOut=/quobyte/bmhenngrp/from-lssc0/projects/CAAPA2_functional_annotation/geovar/scripts/logs/geovar_array-5171213_19.out
+   TresPerTask=cpu=4
+   
+

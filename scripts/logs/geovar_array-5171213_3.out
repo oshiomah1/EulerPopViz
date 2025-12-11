@@ -1,0 +1,68 @@
+############### Job 5171216 prolog ###############
+SLURM_NODELIST: hive-dc-7-10-18
+############### Job 5171216 prolog ###############
+[INFO] Wed Oct 22 20:02:26 PDT 2025 Host: hive-dc-7-10-18
+[INFO] Task 3 -> chr5
+[INFO] Env: /quobyte/bmhenngrp/conda_envs/python_geovar
+[INFO] Script: /quobyte/bmhenngrp/from-lssc0/projects/CAAPA2_functional_annotation/geovar/scripts/geovar_all_chroms.py
+Loading conda/base/latest
+Python: 3.14.0
+geovar OK, numpy/pandas/tqdm OK
+
+[INFO] Processing chr5: /quobyte/bmhenngrp/from-lssc0/data/genomes/CAAPA_freeze2_PHASED_common_rare/snps/chr5.20240612_Freeze2.common_rare_phased.snps.vcf.gz
+[INFO] chr5: Writing allele frequency table...
+[INFO] chr5: Compressing freq table → /quobyte/bmhenngrp/from-lssc0/projects/CAAPA2_functional_annotation/geovar/results/freq_mat_files/chr5.freq_mat.tsv.gz
+
+############### Job 5171216 summary from hive-dc-7-10-18 ###############
+Name                : geovar_array
+User                : oshi
+Account             : publicgrp
+Partition           : high
+Nodes               : hive-dc-7-10-18
+Cores               : 4
+GPUs                : 0
+State               : FAILED
+ExitCode            : 1:0
+Submit              : 2025-10-22T20:02:25
+Start               : 2025-10-22T20:02:26
+End                 : 2025-10-22T21:02:19
+Reserved walltime   : 12:00:00
+Used walltime       : 00:59:53
+Used CPU time       : 00:00:01
+% User (Computation): 72.99%
+% System (I/O)      :  0.00%
+Mem reserved        : 60G
+Max Mem used        : 8.69G (hive-dc-7-10-18)
+Max Disk Write      : 948.14M (hive-dc-7-10-18)
+Max Disk Read       : 2.16G (hive-dc-7-10-18)
+
+############### Job 5171216 info ###############
+JobId=5171216 ArrayJobId=5171213 ArrayTaskId=3 ArrayTaskThrottle=11 JobName=geovar_array
+   UserId=oshi(1724824) GroupId=oshi(1724824) MCS_label=N/A
+   Priority=264 Nice=0 Account=publicgrp QOS=publicgrp-high-qos
+   JobState=COMPLETING Reason=NonZeroExitCode Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=1:0
+   RunTime=00:59:53 TimeLimit=12:00:00 TimeMin=N/A
+   SubmitTime=2025-10-22T20:02:25 EligibleTime=2025-10-22T20:02:25
+   AccrueTime=2025-10-22T20:02:25
+   StartTime=2025-10-22T20:02:26 EndTime=2025-10-22T21:02:19 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2025-10-22T20:02:26 Scheduler=Main
+   Partition=high AllocNode:Sid=hive-dc-7-7-30:1737569
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=hive-dc-7-10-18
+   BatchHost=hive-dc-7-10-18
+   NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=4,mem=60G,node=1,billing=4
+   AllocTRES=cpu=4,mem=60G,node=1,billing=4
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=4 MinMemoryNode=60G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/quobyte/bmhenngrp/from-lssc0/projects/CAAPA2_functional_annotation/geovar/scripts/run_geovar.slurm
+   WorkDir=/quobyte/bmhenngrp/from-lssc0
+   StdErr=/quobyte/bmhenngrp/from-lssc0/projects/CAAPA2_functional_annotation/geovar/scripts/logs/geovar_array-5171213_3.err
+   StdIn=/dev/null
+   StdOut=/quobyte/bmhenngrp/from-lssc0/projects/CAAPA2_functional_annotation/geovar/scripts/logs/geovar_array-5171213_3.out
+   TresPerTask=cpu=4
+   
+

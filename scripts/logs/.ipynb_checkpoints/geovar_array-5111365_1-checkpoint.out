@@ -1,0 +1,12 @@
+############### Job 5111366 prolog ###############
+SLURM_NODELIST: hive-dc-7-7-65
+############### Job 5111366 prolog ###############
+[INFO] Thu Oct 16 10:22:12 PDT 2025 Host: hive-dc-7-7-65
+[INFO] Task 1 -> chr1
+[INFO] Env: /quobyte/bmhenngrp/conda_envs/python_geovar
+[INFO] Script: /quobyte/bmhenngrp/from-lssc0/projects/CAAPA2_functional_annotation/geovar/scripts/geovar_all_chroms.py
+Python: 3.14.0
+Import check failed: marshal data too short
+
+[INFO] Processing chr1: /quobyte/bmhenngrp/from-lssc0/data/genomes/CAAPA_freeze2_PHASED_common_rare/snps/chr1.20240612_Freeze2.common_rare_phased.snps.vcf.gz
+[INFO] chr1: Writing allele frequency table...

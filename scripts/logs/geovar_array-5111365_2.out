@@ -1,0 +1,63 @@
+############### Job 5111367 prolog ###############
+SLURM_NODELIST: hive-dc-7-7-65
+############### Job 5111367 prolog ###############
+[INFO] Thu Oct 16 10:22:12 PDT 2025 Host: hive-dc-7-7-65
+[INFO] Task 2 -> chr2
+[INFO] Env: /quobyte/bmhenngrp/conda_envs/python_geovar
+[INFO] Script: /quobyte/bmhenngrp/from-lssc0/projects/CAAPA2_functional_annotation/geovar/scripts/geovar_all_chroms.py
+Python: 3.14.0
+Import check failed: marshal data too short
+
+############### Job 5111367 summary from hive-dc-7-7-65 ###############
+Name                : geovar_array
+User                : oshi
+Account             : publicgrp
+Partition           : high
+Nodes               : hive-dc-7-7-65
+Cores               : 4
+GPUs                : 0
+State               : FAILED
+ExitCode            : 1:0
+Submit              : 2025-10-16T10:21:46
+Start               : 2025-10-16T10:22:11
+End                 : 2025-10-16T10:22:24
+Reserved walltime   : 12:00:00
+Used walltime       : 00:00:13
+Used CPU time       : 00:00:00
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 16G
+Max Mem used        : 86.25M (hive-dc-7-7-65)
+Max Disk Write      : 0.00  (hive-dc-7-7-65)
+Max Disk Read       : 0.00  (hive-dc-7-7-65)
+
+############### Job 5111367 info ###############
+JobId=5111367 ArrayJobId=5111365 ArrayTaskId=2 ArrayTaskThrottle=11 JobName=geovar_array
+   UserId=oshi(1724824) GroupId=oshi(1724824) MCS_label=N/A
+   Priority=316 Nice=0 Account=publicgrp QOS=publicgrp-high-qos
+   JobState=COMPLETING Reason=NonZeroExitCode Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=1:0
+   RunTime=00:00:13 TimeLimit=12:00:00 TimeMin=N/A
+   SubmitTime=2025-10-16T10:21:46 EligibleTime=2025-10-16T10:21:46
+   AccrueTime=2025-10-16T10:21:46
+   StartTime=2025-10-16T10:22:11 EndTime=2025-10-16T10:22:24 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2025-10-16T10:22:11 Scheduler=Backfill
+   Partition=high AllocNode:Sid=hive-dc-7-7-85:1283994
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=hive-dc-7-7-65
+   BatchHost=hive-dc-7-7-65
+   NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=4,mem=16G,node=1,billing=4
+   AllocTRES=cpu=4,mem=16G,node=1,billing=4
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/quobyte/bmhenngrp/from-lssc0/projects/CAAPA2_functional_annotation/geovar/scripts/run_geovar.slurm
+   WorkDir=/quobyte/bmhenngrp/from-lssc0/projects/CAAPA2_functional_annotation/geovar/scripts
+   StdErr=/quobyte/bmhenngrp/from-lssc0/projects/CAAPA2_functional_annotation/geovar/scripts/logs/geovar_array-5111365_2.err
+   StdIn=/dev/null
+   StdOut=/quobyte/bmhenngrp/from-lssc0/projects/CAAPA2_functional_annotation/geovar/scripts/logs/geovar_array-5111365_2.out
+   TresPerTask=cpu=4
+   
+

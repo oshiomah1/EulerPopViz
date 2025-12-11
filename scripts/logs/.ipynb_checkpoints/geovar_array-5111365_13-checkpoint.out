@@ -1,0 +1,12 @@
+############### Job 5111378 prolog ###############
+SLURM_NODELIST: hive-dc-7-6-22
+############### Job 5111378 prolog ###############
+[INFO] Thu Oct 16 10:22:29 PDT 2025 Host: hive-dc-7-6-22
+[INFO] Task 13 -> chr13
+[INFO] Env: /quobyte/bmhenngrp/conda_envs/python_geovar
+[INFO] Script: /quobyte/bmhenngrp/from-lssc0/projects/CAAPA2_functional_annotation/geovar/scripts/geovar_all_chroms.py
+Python: 3.14.0
+geovar OK, numpy/pandas/tqdm OK
+
+[INFO] Processing chr13: /quobyte/bmhenngrp/from-lssc0/data/genomes/CAAPA_freeze2_PHASED_common_rare/snps/chr13.20240612_Freeze2.common_rare_phased.snps.vcf.gz
+[INFO] chr13: Writing allele frequency table...

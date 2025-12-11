@@ -1,0 +1,5 @@
+############### Job 6028155 prolog ###############
+SLURM_NODELIST: hive-dc-7-9-60
+############### Job 6028155 prolog ###############
+[Thu Dec  4 16:24:54 PST 2025] Starting geovar_all_chrs on node hive-dc-7-9-60
+Loading conda/base/latest

@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "/quobyte/bmhenngrp/from-lssc0/projects/CAAPA2_functional_annotation/geovar/scripts/geovar_all_chroms.py", line 6, in <module>
+    from geovar import read_pop_panel, GeoVar, vcf_to_freq_table
+  File "/quobyte/bmhenngrp/conda_envs/python_geovar/lib/python3.14/site-packages/geovar/__init__.py", line 9, in <module>
+    from .viz import GeoVarPlot
+  File "/quobyte/bmhenngrp/conda_envs/python_geovar/lib/python3.14/site-packages/geovar/viz.py", line 4, in <module>
+    import matplotlib.pyplot as plt
+  File "/quobyte/bmhenngrp/conda_envs/python_geovar/lib/python3.14/site-packages/matplotlib/pyplot.py", line 69, in <module>
+    from matplotlib.figure import Figure, FigureBase, figaspect
+  File "/quobyte/bmhenngrp/conda_envs/python_geovar/lib/python3.14/site-packages/matplotlib/figure.py", line 40, in <module>
+    from matplotlib import _blocking_input, backend_bases, _docstring, projections
+  File "/quobyte/bmhenngrp/conda_envs/python_geovar/lib/python3.14/site-packages/matplotlib/projections/__init__.py", line 55, in <module>
+    from .. import axes, _docstring
+  File "/quobyte/bmhenngrp/conda_envs/python_geovar/lib/python3.14/site-packages/matplotlib/axes/__init__.py", line 2, in <module>
+    from ._axes import Axes
+  File "/quobyte/bmhenngrp/conda_envs/python_geovar/lib/python3.14/site-packages/matplotlib/axes/_axes.py", line 20, in <module>
+    import matplotlib.legend as mlegend
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 758, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 891, in get_code
+  File "<frozen importlib._bootstrap_external>", line 514, in _compile_bytecode
+EOFError: marshal data too short
+srun: error: hive-dc-7-7-65: task 0: Exited with exit code 1

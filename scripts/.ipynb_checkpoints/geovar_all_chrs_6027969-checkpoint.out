@@ -1,0 +1,59 @@
+############### Job 6027969 prolog ###############
+SLURM_NODELIST: hive-dc-7-9-51
+############### Job 6027969 prolog ###############
+[Thu Dec  4 16:20:21 PST 2025] Starting geovar_all_chrs on node hive-dc-7-9-51
+
+############### Job 6027969 summary from hive-dc-7-9-51 ###############
+Name                : geovar_all_chrs
+User                : oshi
+Account             : genome-center-grp
+Partition           : high
+Nodes               : hive-dc-7-9-51
+Cores               : 4
+GPUs                : 0
+State               : FAILED
+ExitCode            : 1:0
+Submit              : 2025-12-04T16:20:07
+Start               : 2025-12-04T16:20:20
+End                 : 2025-12-04T16:20:23
+Reserved walltime   : 1-06:00:00
+Used walltime       :   00:00:03
+Used CPU time       :   00:00:00
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 60G
+Max Mem used        : 19.18M (hive-dc-7-9-51)
+Max Disk Write      : 0.00  (hive-dc-7-9-51)
+Max Disk Read       : 0.00  (hive-dc-7-9-51)
+
+############### Job 6027969 info ###############
+JobId=6027969 JobName=geovar_all_chrs
+   UserId=oshi(1724824) GroupId=oshi(1724824) MCS_label=N/A
+   Priority=6713 Nice=0 Account=genome-center-grp QOS=genome-center-grp-high-qos
+   JobState=COMPLETING Reason=NonZeroExitCode Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=1:0
+   RunTime=00:00:03 TimeLimit=1-06:00:00 TimeMin=N/A
+   SubmitTime=2025-12-04T16:20:07 EligibleTime=2025-12-04T16:20:07
+   AccrueTime=2025-12-04T16:20:07
+   StartTime=2025-12-04T16:20:20 EndTime=2025-12-04T16:20:23 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2025-12-04T16:20:20 Scheduler=Backfill
+   Partition=high AllocNode:Sid=hive-dc-7-6-26:2126338
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=hive-dc-7-9-51
+   BatchHost=hive-dc-7-9-51
+   NumNodes=1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=4,mem=60G,node=1,billing=4
+   AllocTRES=cpu=4,mem=60G,node=1,billing=4
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=4 MinMemoryNode=60G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/quobyte/bmhenngrp/from-lssc0/projects/CAAPA2_functional_annotation/geovar/run_geovar.sh
+   WorkDir=/quobyte/bmhenngrp/from-lssc0/projects/CAAPA2_functional_annotation/geovar/results/freq_mat_files
+   StdErr=/quobyte/bmhenngrp/from-lssc0/projects/CAAPA2_functional_annotation/geovar/scripts/geovar_all_chrs_6027969.err
+   StdIn=/dev/null
+   StdOut=/quobyte/bmhenngrp/from-lssc0/projects/CAAPA2_functional_annotation/geovar/scripts/geovar_all_chrs_6027969.out
+   TresPerTask=cpu=4
+   MailUser=oshiomah1234@gmail.com MailType=INVALID_DEPEND,BEGIN,END,FAIL,REQUEUE,STAGE_OUT
+   
+
