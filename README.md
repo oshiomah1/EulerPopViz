@@ -1,7 +1,4 @@
-
-
-
-
+![EulerPopViz workflow schematic](eulerpopvizdiagram.png)
 
 # Part 1 – Creating the Frequency Matrix with `geovarr.py`
 
