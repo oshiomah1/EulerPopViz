@@ -110,10 +110,11 @@ This section describes how to generate the **euler object** from the **GeoVar co
 
 ---
 ## Data Prep
-Apart from the input files,you will also have to create a vector list of your pops of interest and run them with the genrate_euler_object function
+Apart from the input files,you will also have to create a vector list of your pops of interest and run them with the generate_euler_object function. The allele frequency bin is an integer between 0 and 4, each representing a bin from  the geovar script. A MAF cutoff of 5% will be bin 3.
 
 # Part 3 – Custom Visualization Script
+---
 
 If you plotted the dry run you can see that the default ouputs are a bit messy and not aesthetically pleasing. In this section I have a custom script that ingests the euler objects and uses ggplot to customize plotting options
 In the script I have a vector for colors for each unique population which you are welcome to edit. I also generated lists to rename the populations in case their default names have underscores and hyphens
----
+
