@@ -1,3 +1,8 @@
+
+
+
+
+
 # Part 1 – Creating the Frequency Matrix with `geovarr.py`
 
 This document describes how to generate a **population frequency matrix** and **GeoVar counts file** from a VCF using the `geovarr.py` script.
@@ -36,44 +41,41 @@ geovarr.py takes your VCF and population panel and produces:
 
 The script expects you to set a few parameters inside the Python file (or via a config, depending on how you've structured it). At minimum, you’ll need to specify:
 
-# Path to the top level directory containing the VCF (optional, depending on your script)
-data_path = "/path/to/data/"
 
-# Path to the population panel
-population_panel = "/path/to/pop_panel.txt"
+data_path = "/path/to/data/" # Path to the top level directory containing the VCF (optional, depending on your script)
 
-# Path to the input VCF file
-vcf_file = "/path/to/input.vcf"
+population_panel = "/path/to/pop_panel.txt" # Path to the population panel
+
+vcf_file = "/path/to/input.vcf" # Path to the input VCF file
  
-# Path for the output frequency matrix file
-outfile & freq_file = "/path/to/output/freq_matrix.tsv  # or .txt.gz depending on your script
+outfile & freq_file = "/path/to/output/freq_matrix.tsv  # or .txt.gz depending on your script # Path for the output frequency matrix file
 
-# Path for the zipped output frequency matrix file
-freq_mat_file= "/path/to/output/freq_matrix.tsv.gz
+freq_mat_file= "/path/to/output/freq_matrix.tsv.gz # Path for the zipped output frequency matrix file
 
-# (Optionally) path for other outputs like GeoVar counts
-outfile = "/path/to/output/geovar_counts.txt"
+outfile = "/path/to/output/geovar_counts.txt" #  path for other outputs like GeoVar counts
 
 
 ## 3. Understanding Outputs from geovarr.py
 
-#### The frequency matrix file (usually compressed, e.g. freq_matrix.tsv.gz) has columns like:
-CHR     SNP      A1  A2  MAC     MAF     African-American  Afro-Caribbean  Afro-South_American 
-chr21   5031162  C   A   6       0.0008685582  0.0  0.0019305019305019305  
+#### The frequency matrix file (usually compressed, e.g. freq_matrix.tsv.gz) has columns like: 
 
-##### Column meanings
+| CHR   | SNP     | A1 | A2 | MAC | MAF        | African-American | Afro-Caribbean        | Afro-South_American |
+|-------|---------|----|----|-----|------------|------------------|-----------------------|---------------------|
+| chr21 | 5031162 | C  | A  | 6   | 0.00086856 | 0.0              | 0.0019305             |         0.13        |
 
-CHR – Chromosome.
+### Column meanings
 
-SNP – Variant position / ID (depends on how your script defines it).
+- CHR – Chromosome.
 
-A1 / A2 – Alleles (e.g., reference and alternate alleles).
+- SNP – Variant position / ID (depends on how your script defines it).
 
-MAC – Minor Allele Count.
+- A1 / A2 – Alleles (e.g., reference and alternate alleles).
 
-MAF – Minor Allele Frequency (across all samples).
+- MAC – Minor Allele Count.
 
-Population columns – One column per population in your population panel, each containing the frequency of the minor allele in that population.
+- MAF – Minor Allele Frequency (across all samples).
+
+- Every column after MAF is a population columns – One column per population in your population panel, each containing the frequency of the minor allele in that population.
 
 #### The GeoVar Counts File
 
@@ -81,30 +83,27 @@ The GeoVar counts file summarizes patterns of allele frequencies across populati
 
 It looks like this:
 
-
+```
 0000000000001 189451
 0000000000010 14886
 0000000000011 4740
-...
-In the GeoVar counts file:
+```
 
-Column 1 is a string of digits, one digit per population.
+In the GeoVar counts file, Column 1 is a string of digits, one digit per population. The number of digits equals the number of populations in your population panel.
 
-The number of digits equals the number of populations in your population panel.
-
-The position of a digit corresponds to a particular population (in the same order as in the panel / frequency matrix).
+The position of a digit corresponds to a particular population (in the same order as in the panel / frequency matrix). (#adjust this later for accuracy)
 
 The value of each digit (0–4) indicates which frequency bin that population falls into for a given variant.
 
-Interpretation:
+Interpretation of 0000000000011 4740:
 
-There are as many digits as populations (here, 13 digits → 13 populations).
+In column 1, there are as many digits as populations (here, 13 digits → 13 populations).
 
 For each variant included in this pattern:
 
-Populations at positions 1–11 have digit 0 → bin (0, 0) (no minor allele observed).
+- Populations at positions 1–11 have digit 0 → bin (0, 0) (no minor allele observed).
 
-Populations at positions 12 and 13 have digit 1 → bin (0, 0.01) (very low frequency).
+- Populations at positions 12 and 13 have digit 1 → bin (0, 0.01) (very low frequency).
 
-The second column (4740) means that 4,740 variants share this exact pattern of allele frequency bins across populations.
+- The second column (4740) means that 4,740 variants share this exact pattern of allele frequency bins across populations.
 
