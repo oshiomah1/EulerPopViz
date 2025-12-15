@@ -2,7 +2,7 @@
 
 # Part 1 – Creating the Frequency Matrix with `geovarr.py`
 
-This document describes how to generate a **population frequency matrix** and **GeoVar counts file** from a VCF using the `geovarr.py` script.
+This section describes how to generate a **population frequency matrix** and **GeoVar counts file** from a VCF using the `geovarr.py` script.
 
 ---
 
@@ -104,3 +104,16 @@ For each variant included in this pattern:
 
 - The second column (4740) means that 4,740 variants share this exact pattern of allele frequency bins across populations.
 
+# Part 2 – Generating the Euler Object
+
+This section describes how to generate the **euler object** from the **GeoVar counts file** and a **population list** from a VCF using the `plot_euler` script. #check if its the right script referenced
+
+---
+## Data Prep
+Apart from the input files,you will also have to create a vector list of your pops of interest and run them with the genrate_euler_object function
+
+# Part 3 – Custom Visualization Script
+
+If you plotted the dry run you can see that the default ouputs are a bit messy and not aesthetically pleasing. In this section I have a custom script that ingests the euler objects and uses ggplot to customize plotting options
+In the script I have a vector for colors for each unique population which you are welcome to edit. I also generated lists to rename the populations in case their default names have underscores and hyphens
+---
